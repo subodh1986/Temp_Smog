@@ -120,6 +120,9 @@
 			<Item Name="NI_report.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/Utility/NIReport.llb/NI_report.lvclass"/>
 			<Item Name="NI_ReportGenerationCore.lvlib" Type="Library" URL="/&lt;vilib&gt;/Utility/NIReport.llb/NI_ReportGenerationCore.lvlib"/>
 		</Item>
+		<Item Name="Support" Type="Folder" URL="../Support">
+			<Property Name="NI.DISK" Type="Bool">true</Property>
+		</Item>
 		<Item Name="user config" Type="Folder" URL="../user config">
 			<Property Name="NI.DISK" Type="Bool">true</Property>
 		</Item>
