@@ -123,6 +123,9 @@
 		<Item Name="Support" Type="Folder" URL="../Support">
 			<Property Name="NI.DISK" Type="Bool">true</Property>
 		</Item>
+		<Item Name="TestCode" Type="Folder" URL="../TestCode">
+			<Property Name="NI.DISK" Type="Bool">true</Property>
+		</Item>
 		<Item Name="user config" Type="Folder" URL="../user config">
 			<Property Name="NI.DISK" Type="Bool">true</Property>
 		</Item>
@@ -306,6 +309,7 @@
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
 			<Item Name="Boolean_To_String.vi" Type="VI" URL="../PLC TCP IP FX5U/Boolean_To_String.vi"/>
+			<Item Name="calibration.ctl" Type="VI" URL="../TestCode/Calibration/calibration.ctl"/>
 			<Item Name="Control 100.ctl" Type="VI" URL="../PLC TCP IP FX5U/Control 100.ctl"/>
 			<Item Name="Data Conversion for Read Data.vi" Type="VI" URL="../PLC TCP IP FX5U/Data Conversion for Read Data.vi"/>
 			<Item Name="data save in xcel.vi" Type="VI" URL="../Data base/data save in xcel.vi"/>
@@ -331,122 +335,10 @@
 			<Item Name="Search to -From.vi" Type="VI" URL="../Data base/Search to -From.vi"/>
 			<Item Name="Serial - Settings.ctl" Type="VI" URL="/C/Program Files (x86)/National Instruments/LabVIEW 2015/examples/Instrument IO/Serial/support/Serial - Settings.ctl"/>
 			<Item Name="TCP Initiate.vi" Type="VI" URL="../PLC TCP IP FX5U/TCP Initiate.vi"/>
+			<Item Name="TCP Initiate.vi" Type="VI" URL="../TestCode/PLC TCP IP Q series/TCP Initiate.vi"/>
 			<Item Name="TCP IP Read Data 5U.vi" Type="VI" URL="../PLC TCP IP FX5U/TCP IP Read Data 5U.vi"/>
 			<Item Name="TCP-IP Write Data.vi" Type="VI" URL="../PLC TCP IP FX5U/TCP-IP Write Data.vi"/>
 		</Item>
-		<Item Name="Build Specifications" Type="Build">
-			<Item Name="Borgwarner Line" Type="Installer">
-				<Property Name="Destination[0].name" Type="Str">Coller Leak Testing Machine</Property>
-				<Property Name="Destination[0].parent" Type="Str">{3912416A-D2E5-411B-AFEE-B63654D690C0}</Property>
-				<Property Name="Destination[0].tag" Type="Str">{3C7AC53F-10EE-4A60-A583-77B5C7F68E9F}</Property>
-				<Property Name="Destination[0].type" Type="Str">userFolder</Property>
-				<Property Name="DestinationCount" Type="Int">1</Property>
-				<Property Name="DistPart[0].flavorID" Type="Str">DefaultFull</Property>
-				<Property Name="DistPart[0].productID" Type="Str">{2589F091-F1C8-4F45-B470-6F12C0493EFC}</Property>
-				<Property Name="DistPart[0].productName" Type="Str">NI LabVIEW Runtime 2024 Q3 Patch 3 (64-bit)</Property>
-				<Property Name="DistPart[0].SoftDep[0].exclude" Type="Bool">false</Property>
-				<Property Name="DistPart[0].SoftDep[0].productName" Type="Str">NI ActiveX Container (64-bit)</Property>
-				<Property Name="DistPart[0].SoftDep[0].upgradeCode" Type="Str">{1038A887-23E1-4289-B0BD-0C4B83C6BA21}</Property>
-				<Property Name="DistPart[0].SoftDep[1].exclude" Type="Bool">false</Property>
-				<Property Name="DistPart[0].SoftDep[1].productName" Type="Str">NI Logos 24.1</Property>
-				<Property Name="DistPart[0].SoftDep[1].upgradeCode" Type="Str">{5E4A4CE3-4D06-11D4-8B22-006008C16337}</Property>
-				<Property Name="DistPart[0].SoftDep[2].exclude" Type="Bool">false</Property>
-				<Property Name="DistPart[0].SoftDep[2].productName" Type="Str">NI mDNS Responder 24.5</Property>
-				<Property Name="DistPart[0].SoftDep[2].upgradeCode" Type="Str">{9607874B-4BB3-42CB-B450-A2F5EF60BA3B}</Property>
-				<Property Name="DistPart[0].SoftDep[3].exclude" Type="Bool">false</Property>
-				<Property Name="DistPart[0].SoftDep[3].productName" Type="Str">NI TDM Streaming 24.3</Property>
-				<Property Name="DistPart[0].SoftDep[3].upgradeCode" Type="Str">{4CD11BE6-6BB7-4082-8A27-C13771BC309B}</Property>
-				<Property Name="DistPart[0].SoftDepCount" Type="Int">4</Property>
-				<Property Name="DistPart[0].upgradeCode" Type="Str">{B2695A3E-34C2-3082-9B16-BB16F4DF1A07}</Property>
-				<Property Name="DistPart[1].flavorID" Type="Str">_deployment_</Property>
-				<Property Name="DistPart[1].productID" Type="Str">{17EF98AB-54E8-48A7-A0DD-A8A4366E92B2}</Property>
-				<Property Name="DistPart[1].productName" Type="Str">NI-VISA Runtime 15.0</Property>
-				<Property Name="DistPart[1].upgradeCode" Type="Str">{8627993A-3F66-483C-A562-0D3BA3F267B1}</Property>
-				<Property Name="DistPartCount" Type="Int">2</Property>
-				<Property Name="INST_autoIncrement" Type="Bool">true</Property>
-				<Property Name="INST_buildLocation" Type="Path">../builds/Coller Leak Testing Machine/Borgwarner Line</Property>
-				<Property Name="INST_buildLocation.type" Type="Str">relativeToCommon</Property>
-				<Property Name="INST_buildSpecName" Type="Str">Borgwarner Line</Property>
-				<Property Name="INST_defaultDir" Type="Str">{3C7AC53F-10EE-4A60-A583-77B5C7F68E9F}</Property>
-				<Property Name="INST_productName" Type="Str">Coller Leak Testing Machine</Property>
-				<Property Name="INST_productVersion" Type="Str">1.0.1</Property>
-				<Property Name="InstSpecBitness" Type="Str">64-bit</Property>
-				<Property Name="InstSpecVersion" Type="Str">24338003</Property>
-				<Property Name="MSI_distID" Type="Str">{3229B9D7-BBF2-4B01-8A20-FA7F00E93916}</Property>
-				<Property Name="MSI_hideNonRuntimes" Type="Bool">true</Property>
-				<Property Name="MSI_osCheck" Type="Int">0</Property>
-				<Property Name="MSI_upgradeCode" Type="Str">{5ABD0A16-E62E-47D4-822E-C7867AAD069C}</Property>
-				<Property Name="MSI_windowTitle" Type="Str">Leak Testing Machine</Property>
-				<Property Name="RegDest[0].dirName" Type="Str">Software</Property>
-				<Property Name="RegDest[0].dirTag" Type="Str">{DDFAFC8B-E728-4AC8-96DE-B920EBB97A86}</Property>
-				<Property Name="RegDest[0].parentTag" Type="Str">2</Property>
-				<Property Name="RegDestCount" Type="Int">1</Property>
-				<Property Name="Source[0].dest" Type="Str">{3C7AC53F-10EE-4A60-A583-77B5C7F68E9F}</Property>
-				<Property Name="Source[0].File[0].dest" Type="Str">{3C7AC53F-10EE-4A60-A583-77B5C7F68E9F}</Property>
-				<Property Name="Source[0].File[0].name" Type="Str">Collor Leak Testing Line.exe</Property>
-				<Property Name="Source[0].File[0].Shortcut[0].destIndex" Type="Int">1</Property>
-				<Property Name="Source[0].File[0].Shortcut[0].name" Type="Str">Collor Leak Testing Line</Property>
-				<Property Name="Source[0].File[0].Shortcut[0].subDir" Type="Str">Coller Leak Testing Machine</Property>
-				<Property Name="Source[0].File[0].ShortcutCount" Type="Int">1</Property>
-				<Property Name="Source[0].File[0].tag" Type="Str">{218918A9-5134-42A1-83CD-E9C9F7574B7A}</Property>
-				<Property Name="Source[0].FileCount" Type="Int">1</Property>
-				<Property Name="Source[0].name" Type="Str">Collor Leak Testing  Line</Property>
-				<Property Name="Source[0].tag" Type="Ref">/My Computer/Build Specifications/Collor Leak Testing  Line 26112020</Property>
-				<Property Name="Source[0].type" Type="Str">EXE</Property>
-				<Property Name="SourceCount" Type="Int">1</Property>
-			</Item>
-			<Item Name="Collor Leak Testing  Line 26112020" Type="EXE">
-				<Property Name="App_copyErrors" Type="Bool">true</Property>
-				<Property Name="App_INI_aliasGUID" Type="Str">{B2B8B518-34BB-4AB6-8A42-BE6C57FAE92C}</Property>
-				<Property Name="App_INI_GUID" Type="Str">{8D3EE06E-DC33-4721-AF19-3EF0451254B1}</Property>
-				<Property Name="App_serverConfig.httpPort" Type="Int">8002</Property>
-				<Property Name="App_serverType" Type="Int">1</Property>
-				<Property Name="Bld_autoIncrement" Type="Bool">true</Property>
-				<Property Name="Bld_buildCacheID" Type="Str">{A17A50B0-BA00-41D2-B452-16D5D3D8DC88}</Property>
-				<Property Name="Bld_buildSpecName" Type="Str">Collor Leak Testing  Line 26112020</Property>
-				<Property Name="Bld_excludeInlineSubVIs" Type="Bool">true</Property>
-				<Property Name="Bld_excludeLibraryItems" Type="Bool">true</Property>
-				<Property Name="Bld_excludePolymorphicVIs" Type="Bool">true</Property>
-				<Property Name="Bld_localDestDir" Type="Path">../builds/NI_AB_PROJECTNAME/Collor Leak Testing  Line 26112020</Property>
-				<Property Name="Bld_localDestDirType" Type="Str">relativeToCommon</Property>
-				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
-				<Property Name="Bld_previewCacheID" Type="Str">{2B0077B7-B674-4110-A6B2-B510CCA776C2}</Property>
-				<Property Name="Bld_version.build" Type="Int">132</Property>
-				<Property Name="Bld_version.major" Type="Int">1</Property>
-				<Property Name="Destination[0].destName" Type="Str">Collor Leak Testing Line.exe</Property>
-				<Property Name="Destination[0].path" Type="Path">../builds/NI_AB_PROJECTNAME/Collor Leak Testing  Line 26112020/Collor Leak Testing Line.exe</Property>
-				<Property Name="Destination[0].preserveHierarchy" Type="Bool">true</Property>
-				<Property Name="Destination[0].type" Type="Str">App</Property>
-				<Property Name="Destination[1].destName" Type="Str">Support Directory</Property>
-				<Property Name="Destination[1].path" Type="Path">../builds/NI_AB_PROJECTNAME/Collor Leak Testing  Line 26112020/data</Property>
-				<Property Name="DestinationCount" Type="Int">2</Property>
-				<Property Name="Exe_iconItemID" Type="Ref"></Property>
-				<Property Name="Source[0].itemID" Type="Str">{5555A3FF-A169-45D7-B0A7-8578D058C826}</Property>
-				<Property Name="Source[0].type" Type="Str">Container</Property>
-				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[1].itemID" Type="Ref">/My Computer/Main VI.vi</Property>
-				<Property Name="Source[1].sourceInclusion" Type="Str">TopLevel</Property>
-				<Property Name="Source[1].type" Type="Str">VI</Property>
-				<Property Name="Source[2].Container.applyInclusion" Type="Bool">true</Property>
-				<Property Name="Source[2].Container.depDestIndex" Type="Int">0</Property>
-				<Property Name="Source[2].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[2].itemID" Type="Ref">/My Computer/user config</Property>
-				<Property Name="Source[2].sourceInclusion" Type="Str">Include</Property>
-				<Property Name="Source[2].type" Type="Str">Container</Property>
-				<Property Name="Source[3].Container.applyInclusion" Type="Bool">true</Property>
-				<Property Name="Source[3].Container.depDestIndex" Type="Int">0</Property>
-				<Property Name="Source[3].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[3].itemID" Type="Ref">/My Computer/NIReport.llb</Property>
-				<Property Name="Source[3].sourceInclusion" Type="Str">Include</Property>
-				<Property Name="Source[3].type" Type="Str">Container</Property>
-				<Property Name="SourceCount" Type="Int">4</Property>
-				<Property Name="TgtF_fileDescription" Type="Str">Collor Leak Testing  Line 26112020</Property>
-				<Property Name="TgtF_internalName" Type="Str">Collor Leak Testing  Line 26112020</Property>
-				<Property Name="TgtF_legalCopyright" Type="Str">Copyright © 2018 </Property>
-				<Property Name="TgtF_productName" Type="Str">Collor Leak Testing  Line 26112020</Property>
-				<Property Name="TgtF_targetfileGUID" Type="Str">{218918A9-5134-42A1-83CD-E9C9F7574B7A}</Property>
-				<Property Name="TgtF_targetfileName" Type="Str">Collor Leak Testing Line.exe</Property>
-			</Item>
-		</Item>
+		<Item Name="Build Specifications" Type="Build"/>
 	</Item>
 </Project>
