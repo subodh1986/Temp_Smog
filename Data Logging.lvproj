@@ -333,7 +333,7 @@
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
 			<Item Name="Search to -From.vi" Type="VI" URL="../Data base/Search to -From.vi"/>
-			<Item Name="Serial - Settings.ctl" Type="VI" URL="/C/Program Files (x86)/National Instruments/LabVIEW 2015/examples/Instrument IO/Serial/support/Serial - Settings.ctl"/>
+			<Item Name="Serial - Settings.ctl" Type="VI" URL="../../../../../../Program Files (x86)/National Instruments/LabVIEW 2015/examples/Instrument IO/Serial/support/Serial - Settings.ctl"/>
 			<Item Name="TCP Initiate.vi" Type="VI" URL="../PLC TCP IP FX5U/TCP Initiate.vi"/>
 			<Item Name="TCP Initiate.vi" Type="VI" URL="../TestCode/PLC TCP IP Q series/TCP Initiate.vi"/>
 			<Item Name="TCP IP Read Data 5U.vi" Type="VI" URL="../PLC TCP IP FX5U/TCP IP Read Data 5U.vi"/>
